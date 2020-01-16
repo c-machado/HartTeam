@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <form>
+    <input placeholder="# Total Open Bugs" name="total" id="total-bugs"/>
+    <input placeholder="# Total Closed Bugs" id="closed-bugs"/>
+    <button type="submit">Update</button>
+    <button>Reset</button>
+  </form>
+  <div class="thermometer-cont">
+    <span id='text-percentage'>0%</span>
+    <div class="thermometer">
+      <img src="thermometer.svg"/>
+      <span class="mask" id="mask"></span>
+      <span class="gradient"></span>
+    </div>
+  </div>
+  <div class="logo">
+    <div class="header-cont">
+      <img src="Google_2015_logo.svg"/>
+      <hr />
+      <h1>HART Closed Bugs</h1>
+    </div>
+    <div id="tables-container">
+
+    </div>
+  </div>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js">
+  </script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js">
+  </script>
+  <script type="text/javascript" src="main.js">
+  </script>
+</body>
+
+</html>

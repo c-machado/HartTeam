@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Faces;
+    src: url(SketchySmiley.ttf);
+}
+
+body {
+  font-family: "Roboto", Helvetica, arial, sans-serif;
+  font-size: 0;
+  margin: 0;
+}
+
+h1 {
+  color: #808080;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
+div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-cont {
+  margin-left: -10%;
+}
+
+.thermometer-cont {
+  height: 100%;
+  width: 30%;
+}
+
+.thermometer-cont img {
+  display: block;
+  height: 80%;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+.thermometer-cont div {
+  width: 100%;
+}
+
+#text-percentage {
+  color: black;
+  display: block;
+  font-size: 30px;
+  margin-top: 200px;
+  position: absolute;
+}
+
+.thermometer {
+  position: relative;
+  height: 100%;
+}
+
+.gradient,
+.mask {
+  background: red;
+  border-radius: 31px;
+  display: block;
+  height: 78%;
+  left: 50%;
+  position: absolute;
+  top: 11%;
+  width: 4%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+.mask {
+  background: #fff;
+  border-radius: 0;
+  z-index: -1;
+}
+
+form {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease-in;
+  z-index: 1;
+}
+
+form.show {
+  transform: translateY(0);
+}
+
+button{
+  margin:10px;
+  width: 80px;
+  height: 30px;
+}
+
+input{
+  margin: 10px;
+  width: 150px;
+  height: 30px;
+}
+
+.logo {
+  text-align: center;
+  vertical-align: top;
+  width: 70%;
+}
+
+.logo img{
+  margin-bottom: 35px;
+  margin-top: 40px;
+  max-width: 250px;
+}
+
+hr{
+  border-color: #EEE;
+  border-bottom: 1px;
+  margin: 0 auto;
+  max-width: 290px;
+  width: 50%;
+}
+
+table{
+  border-spacing: 5px;
+  text-align: center;
+  width: 90%;
+}
+
+table, th, td {
+    padding: 7px 15px;
+    border-collapse: collapse;
+}
+
+thead tr {
+  background: #808080;
+  color: #FFF;
+}
+
+thead th {
+  font-weight: normal;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+tbody {
+  color: #4E4E4E;
+}
+
+tbody td {
+  border-bottom: 1px solid #BBB;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+.faces-cell {
+  font-family: Faces;
+  font-size: 30px;
+}
+
+.faces-cell.sad {
+  color: red;
+}
+
+.faces-cell.happy {
+  color: green;
+}
